@@ -1,0 +1,82 @@
+#section-a {
+ background-color: var(--bgColor2);
+}
+  .section-a {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.section-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.section-content.mirror {
+  flex-direction: row-reverse;
+}
+
+.section-content .section-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.section-content.mirror .section-text {
+  align-items: flex-end;
+}
+
+.section-content h2, .section-content p {
+  text-align: left;
+}
+
+.section-content.mirror h2, .section-content.mirror p {
+  text-align: right;
+}
+
+.section-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.section-image {
+  max-width: 50%;
+  width: 100%;
+}
+
+.section-text {
+  max-width: 50%;
+  padding: 20px;
+  width: 100%;
+}
+
+.section-headline {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section-paragraph {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.section-cta {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--bgColor); /* Example background color */
+  color: var(--ctaTextColor, #ffffff); /* Example text color */
+  border-radius: 5px;
+}
+
+.section-cta:hover {
+  background-color: var(
+    --bgColor2
+  ); /* Example hover background color */
+}
+

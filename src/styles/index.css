@@ -1,0 +1,85 @@
+:root {
+  --bgColor: #4caf50;
+  --bgColor2: #f0f7c7;
+  --textAccent: #64844e;
+
+  --textColor: #fffffff;
+  --max-width: min(1200px, 100%);
+  --nav-height: 100px;
+
+  --section-padding: 40px;
+  --min-height: calc(
+    100svh - calc(var(--nav-height) + (2 * var(--section-padding)))
+  );
+
+  --bp1: 1200px;
+}
+
+
+/*  */
+/*  */
+/*  */
+/* Sections */
+/*  */
+/*  */
+/*  */
+
+section {
+  width: 100%;
+  max-width: 100svw;
+  display: flex;
+  justify-content: center;
+  min-height: var(--min-height);
+  padding-block: var(--section-padding);
+}
+
+section.half {
+  min-height: unset;
+}
+
+.max-width {
+  max-width: var(--max-width);
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.as {
+  align-items: flex-start;
+}
+
+.js {
+  justify-content: flex-start;
+}
+
+.w-full {
+  width: 100%;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+@media screen and (max-width: 1200px) {
+    .flex {
+        flex-direction: column !important;
+    }
+
+    section * {
+      text-align: center !important;
+      flex-direction: column !important;
+      align-items: center !important;
+    }
+}
+
